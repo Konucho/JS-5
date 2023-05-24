@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script language="JavaScript">
+
+        function Nikitsenka_start() {
+            start_nik = new Date();
+            poczatek_nik=start_nik.getTime()
+        }
+
+        function Nikitsenka_stop() {
+            stop_nik = new Date();
+            koniec_nik=stop_nik.getTime()
+            roznica_nik=koniec_nik-poczatek_nik;
+            pokaz1.innerHTML=roznica_nik/1000+" s";
+        }       
+
+
+        dzis_nik = new Date();
+        document.write("<br>Aktualny czas : ",dzis_nik.getHours(),":",dzis_nik.getMinutes());
+        </script>
+    </head>
+
+
+    <body>
+
+        <br>
+        <input type="button" name="Button1" value="START stoper" onclick="Nikitsenka_start()">
+        <input type="button" name="Button2" value="STOP stoper" onclick="Nikitsenka_stop()">
+        
+        <table tutaj obramowanie>
+            <tr id="pokaz1"></tr>
+        </table>
+    </body>
+</html>

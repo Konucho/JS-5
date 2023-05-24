@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+    <div style="color: red; font-size: 72px;">
+        Nikitsenka 
+    </div>
+
+    <div style="color: green; font-size: 24px;">
+    dzis = new Date()-> Tworzy nową instancję obiektu, przechowującego podaną datę i czas, określoną w lokalnej strefie czasowej <br>
+    dzis = dzis.getHours()-> zwraca aktualną godzinę<br>
+    dzis = dzis.getMinutes()-> zwraca aktualne minuty<br>
+    dzis = dzis.getMonth()-> zwraca aktualny miesiąc<br>
+    dzis = dzis.getDate()-> zwraca aktualny dzien<br>
+    dzis = dzis.getFullYear()-> zwraca aktualny rok<br>
+    </div>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
+</script>
+</body>
+</html>

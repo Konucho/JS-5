@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script language="JavaScript">
+        
+
+        function Przycisk1_Nikitsenka() {
+            pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+        }
+
+        function Przycisk2_Nikitsenka() {
+            pokaz2.innerHTML="Aktualny Data : "+dzis_nik.getDate()+"."+dzis_nik.getMonth()+"."+dzis_nik.getFullYear();
+        }
+        
+        
+        function Przycisk3_Nikitsenka() {
+            pokaz3.innerHTML="Aktualny czas : "+dzis_nik.getHours()+":"+dzis_nik.getMinutes();
+        }
+
+
+
+        dzis_nik = new Date();
+        
+       </script>
+    </head>
+
+
+    <body>
+
+        <br>
+        <img src="b1.png" height="150" size="150" onclick="Przycisk1_Nikitsenka()">
+        <img src="b2.png" height="150" size="150" onclick="Przycisk2_Nikitsenka()">
+        <img src="b3.png" height="150" size="150" onclick="Przycisk3_Nikitsenka()">
+        <table tutaj obramowanie>
+            <tr id="pokaz1"></tr>
+            <tr id="pokaz2"></tr>
+            <tr id="pokaz3"></tr>
+        </table>
+    </body>
+</html>

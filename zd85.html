@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    <script type="text/javascript">
+const aktualnaData = new Date();
+
+const numerDniaTygodnia = aktualnaData.getDay();
+
+let nazwaDniaTygodnia;
+switch (numerDniaTygodnia) {
+  case 0:
+    nazwaDniaTygodnia = "niedziela";
+    break;
+  case 1:
+    nazwaDniaTygodnia = "poniedziałek";
+    break;
+  case 2:
+    nazwaDniaTygodnia = "wtorek";
+    break;
+  case 3:
+    nazwaDniaTygodnia = "środa";
+    break;
+  case 4:
+    nazwaDniaTygodnia = "czwartek";
+    break;
+  case 5:
+    nazwaDniaTygodnia = "piątek";
+    break;
+  case 6:
+    nazwaDniaTygodnia = "sobota";
+    break;
+}
+
+document.write("Dzisiaj jest ", nazwaDniaTygodnia);
+</script>
+    </head>
+
+
+    <body>
+
+
+    </body>
+</html>
